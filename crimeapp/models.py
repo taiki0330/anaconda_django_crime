@@ -15,7 +15,7 @@ class CrimeModel(models.Model):
     crime_start_datetime = models.DateTimeField(null=True, blank=True)
     crime_end_datetime = models.DateTimeField(null=True, blank=True)
     crime_place = models.CharField(max_length=100)
-    crim_fact = models.TextField()
+    crime_fact = models.TextField()
 
     def __str__(self):
         return self.crime_name

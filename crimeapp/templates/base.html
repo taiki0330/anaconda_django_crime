@@ -5,12 +5,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>事件管理</title>
+
     {% tailwind_css %}
+
 </head>
 <body>
-    <title>webpage</title>
-    <h1 class="bg-slate-500 text-3xl text-white py-3 px-2">Hello World</h1>
-    <p class="bg-purple-500">my amazing page</p>
+
+    {% block header %}
+    {% endblock header %}
+
+    {% block content %}
+    {% endblock content %}
+
 </body>
 </html>
